@@ -659,7 +659,7 @@ prompt_chars() {
   local bt_prompt_chars_root="${BULLETTRAIN_PROMPT_ROOT_CHAR}"
 
   if [[ $BULLETTRAIN_PROMPT_ROOT == true ]]; then
-    bt_prompt_chars="%(!.%F{$BULLETTRAIN_PROMPT_ROOT_FG}${bt_prompt_chars_root}%f.%F{$BULLETTRAIN_PROMPT_CHAR_FG}${bt_prompt_chars}%f)"
+    bt_prompt_chars="%(!.%F{$BULLETTRAIN_PROMPT_ROOT_CHAR_FG}${bt_prompt_chars_root}%f.%F{$BULLETTRAIN_PROMPT_CHAR_FG}${bt_prompt_chars}%f)"
   fi
 
   if [[ $BULLETTRAIN_PROMPT_SEPARATE_LINE == false ]]; then
