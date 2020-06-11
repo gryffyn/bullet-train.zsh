@@ -666,7 +666,7 @@ prompt_chars() {
     bt_prompt_chars="%(!.%F{$BULLETTRAIN_PROMPT_CHAR_FG}${bt_prompt_chars}%f)"
   fi
 
-  echo -n "%(!.%F{$BULLETTRAIN_PROMPT_CHAR_FG}${bt_prompt_chars}%f)"
+  echo -n "${bt_prompt_chars}"
 
   if [[ -n $BULLETTRAIN_PROMPT_CHAR ]]; then
     echo -n " "
